@@ -1,17 +1,29 @@
-<section id="gallery">
-<h2>Image Gallery</h2>
-<div class="gallery">
-<img src="images/image1.jpg" alt="Image 1" onclick="openLightbox(0)">
-<img src="images/image2.jpg" alt="Image 2" onclick="openLightbox(1)">
-<img src="images/image3.jpg" alt="Image 3" onclick="openLightbox(2)">
-</div>
-<!-- Lightbox Modal -->
-<div id="lightbox" class="lightbox"> 
-<span class="close" onclick="closeLightbox()">&times;</span>
-<img id="lightboxImage" src="" alt="Lightbox Image">
-<div class="lightbox-controls">
-<button onclick="prevImage()">&#10094;</button>
-<button onclick="nextImage()">&#10095;</button> 
-</div> 
-</div> 
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="gallery">
+  <h2>Image Gallery</h2>
+  <div class="gallery">
+  <img src="images/image1.jpg" alt="Image 1" onclick="openLightbox(0)">
+  <img src="images/image2.jpg" alt="Image 2" onclick="openLightbox(1)">
+  <img src="images/image3.jpg" alt="Image 3" onclick="openLightbox(2)">
+  </div>
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox"> 
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <img id="lightboxImage" src="" alt="Lightbox Image">
+  <div class="lightbox-controls">
+  <button onclick="prevImage()">&#10094;</button>
+  <button onclick="nextImage()">&#10095;</button> 
+  </div> 
+  </div> 
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
